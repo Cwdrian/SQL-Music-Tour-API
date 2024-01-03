@@ -10,18 +10,23 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       band_id: {
+        autoIncrement: true,
+        primaryKey: true,
         type: Sequelize.INTEGER
       },
       name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       genre: {
+        allowNull: false,
         type: Sequelize.TEXT
       },
       available_start_time: {
         type: Sequelize.DATE
       },
       end_time: {
+        allowNull: false,
         type: Sequelize.DATE
       },
       createdAt: {
